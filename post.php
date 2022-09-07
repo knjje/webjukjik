@@ -9,15 +9,22 @@
 <body>
     <h1 align="center">Webboard JUKJIK</h1>
     <hr>
-    <div align="center">ต้องการดูกระทู้หมายเลข <?php echo $_GET["id"]; ?></div>
+    <div align="center">ต้องการดูกระทู้หมายเลข <?php echo $_GET["id"]; ?>
     <br>
+    <?php
+        $x = $_GET["id"];
+        if(($x%2)==0)
+            echo "เป็นกระทู้หมายเลขคู่";
+        else
+            echo "เป็นกระทู้หมายเลขคี่";
+    
+    ?></div><br><br>
     <table style="border: 2px solid black; width: 40%" align="center">
     <tr><td style="background-color: #6CD2FE;">แสดงความคิดเห็น</td></tr>
     <tr><td colspan="2"><textarea name="" id="" cols="100" rows="3"></textarea></td></tr>
     <tr><td colspan="2" align="center"><input type="submit" value="ส่งข้อความ"></td></tr>
 </table>
-
 <br>
-<center><a href="index.html">กลับไปหน้าหลัก</a></div></center>
+<center><a href="index.php">กลับไปหน้าหลัก</a></div></center>
 </body>
 </html>
