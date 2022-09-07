@@ -18,7 +18,7 @@
         else
             echo "เป็นกระทู้หมายเลขคี่";
     
-    ?></div><br><br>
+    ?></div><br>
     <table style="border: 2px solid black; width: 40%" align="center">
     <tr><td style="background-color: #6CD2FE;">แสดงความคิดเห็น</td></tr>
     <tr><td colspan="2"><textarea name="" id="" cols="100" rows="3"></textarea></td></tr>
