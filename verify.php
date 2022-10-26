@@ -3,10 +3,10 @@
     if(isset($_SESSION['id'])){
         header("location:index.php");
         die();
-}
+    }
 ?>
 
-<?php 
+        <?php 
             $login=$_POST["login"];
             $pwd=$_POST["pwd"];
             if($login=="admin" && $pwd=="ad1234"){
