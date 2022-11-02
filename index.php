@@ -89,7 +89,8 @@
                 for($i=1;$i<=10;$i++){
                     echo "<td><a href=post.php?id=$i style=text-decoration:none>กระทู้ที่ $i </a></td>";
                     if($_SESSION['role']=='a'){
-                        echo "<td><a href=delete.php?id=$i class='btn btn-danger btn-sm' onclick='return myfunction1();'><i class='bi bi-trash'></i></a></td>";
+                        echo "<td><a href=delete.php?id=$i class='btn btn-danger btn-sm' onclick='return myfunction1();'>
+                        <i class='bi bi-trash'></i></a></td>";
                     }
                     echo "</tr>";
                 }
@@ -100,4 +101,5 @@
 <?php 
 }
 ?>
+
 </html>
