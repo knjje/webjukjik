@@ -8,7 +8,7 @@ use LDAP\Result;
     $gender = $_POST['gender'];
     $email = $_POST['email'];
 
-    $conn = new PDO("mysql:host=localhost;dbname=webboard;charset=utf8", "root" , "");
+    $conn = new PDO("mysql:host=localhost;dbname=webborad;charset=utf8", "root" , "");
     $password=sha1($password);
 
     $sql = "SELECT * FROM user where login='$login'";
