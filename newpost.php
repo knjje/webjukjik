@@ -1,5 +1,9 @@
 <?php
 session_start();
+if(!isset($_SESSION['id'])){
+    header("location:index.php");
+    die();
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -14,10 +18,13 @@ session_start();
 <body>
     <h1 align="center">Webboard JUKJIK</h1>
     <hr>
-    <?php echo "ผู้ใช้ : $_SESSION[username]"; ?> <br>
     <table>
-
-        <tr>
+        <tr><td>
+        <?php 
+        echo "&nbsp;ผู้ใช้ &nbsp; $_SESSION[username]"; 
+        ?>
+        </td></tr>
+    <tr>
             <td>หมวดหมู่ : </td>
             <td><select name="category">
                     <option value="general">เรื่องทั่วไป</option>
@@ -35,6 +42,9 @@ session_start();
             <td></td>
             <td ><input type="submit" value="บันทึกข้อความ"></td></tr>
     </table>
+    
+
+        
 
 </body>
 

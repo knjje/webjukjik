@@ -42,7 +42,6 @@
                 </ul>
             </span>
         </div>
-        <div><a href="newpost.php" class="btn btn-success btn-sm"><i class="bi bi-plus"></i> สร้างกระทู้ใหม่</a></div>
     </div>
     <br>
     <table class="table table-striped">
